@@ -1,0 +1,44 @@
+﻿<Window x:Class="Cresa.Admin.AsociazaPlata"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Asociaza Plata" Height="300" Width="350" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/fundalButoane.avif" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Width" Value="200"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#00C9FF" Offset="0.0"/>
+                            <GradientStop Color="#92FE9D" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="6" Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Resources>
+        <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Optiuni plati" FontSize="18" FontWeight="Bold" Foreground="White" Margin="0,0,0,10" TextAlignment="Center"/>
+
+            <Button Content="Posteaza plati pentru toti copiii" Click="PosteazaPlati_Click"/>
+            <Button Content="Actualizeaza restul de plata" Click="ActualizeazaRest_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
