@@ -51,12 +51,12 @@ Cresa
 
 ##  How to Run
 
-- 1. Clone this repository:
+-  Clone this repository:
 ```bash
 git clone https://github.com/alexandrulascu/Cresa---WPF-application.git
 ```
 
-- 2. Open the solution in Visual Studio 2022
-- 3. Restore NuGet packages (if required)
-- 4. Run the project — the LoginWindow will appear first
-- 5. Navigate through the modules (Admin, Educator, Parent)
+-  Open the solution in Visual Studio 2022
+-  Restore NuGet packages (if required)
+-  Run the project — the LoginWindow will appear first
+-  Navigate through the modules (Admin, Educator, Parent)
