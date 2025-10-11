@@ -53,6 +53,7 @@ Cresa
 1️. Clone this repository:
 ```bash
 git clone https://github.com/alexandrulascu/Cresa---WPF-application.git
+
 2️. Open the solution in Visual Studio 2022
 3️. Restore NuGet packages (if required)
 4️. Run the project — the LoginWindow will appear first
