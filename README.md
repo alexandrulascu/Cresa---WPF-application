@@ -31,6 +31,8 @@ The goal is to create a modular WPF system that follows **MVVM principles**, mai
 
 ##  Project Structure
 
+```markdown
+
 Cresa
 │
 ├── Commands # RelayCommand and base command classes
@@ -44,8 +46,7 @@ Cresa
 ├── Parinte
 ├── LoginWindow.xaml
 └── MainWindow.xaml
-
-
+```
 ---
 
 ##  How to Run
